@@ -6,7 +6,8 @@ const request=require("request");
 const https=require("https");
 const _=require("lodash");
 const mongoose=require("mongoose");
-mongoose.connect("mongodb://localhost:27017/blogDB")
+mongoose.connect("mongodb+srv://admin:admin@cluster0.wu6ayr7.mongodb.net/blogDB")
+// mongoose.connect("mongodb://localhost:27017/blogDB")
 const ContentSchema={
   title:{
     type:String,
